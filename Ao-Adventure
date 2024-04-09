@@ -1,4 +1,41 @@
-_G.auto = true
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+MakeWindow({
+  Hub = {
+    Title = "Xozaity HUB",
+    Animation = "By : Raphae1"
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Xozaity HUB",
+    Description = "",
+    KeyLink = "https://sub4unlock.io/1kPsC",
+    Keys = {"Exility-QT2M-UVA1-2550"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Key is Correct wait(..)",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+
+MinimizeButton({
+  Image = "rbxassetid://16647182763",
+  Size = {55, 55},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+--farm
+local Main = MakeTab({Name = "Main"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Auto")
+AddButton(Main, {
+  Name = "Auto Item",
+  Callback = function()
+    _G.auto = true
 while _G.auto do wait()
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-37.19272232055664, 22.734107971191406, 205.81581115722656)
@@ -15,3 +52,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(62.25310
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9.347261428833008, 363.264404296875, 197.277420043945)
 end
+
+  end
+})
